@@ -1,0 +1,39 @@
+[
+    {   "id":1,
+        "categoryid":2,
+        "lapname":"Xiaomi Notebook Pro 120G",
+        "lapprice":"69,999",
+        "lapimage":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661833895.57191049!256x256.jpg?f=webp",
+        "lapdetail":"Best Deal in Town"
+       },
+       {
+        "lapname":"Mi Notebook 14 Horizon Gray",
+        "lapprice":"₹49,999",
+        "lapimage":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1632911544.4955477!256x256.jpg?f=webp",
+        "lapdetail":"Full HD Anti-glare Horizon Display"
+       },
+       {
+        "lapname":"Mi NoteBook Ultra Lustrous Gray",
+        "lapprice":"₹56,999",
+        "lapimage":"https://i03.appmifile.com/336_operator_in/09/12/2022/4fb05f0922e0db6f7c475b4fb0f30316!380x380.jpg?f=webp",
+        "lapdetail":"Best Deal in Town"
+       },
+       {
+        "lapname":"Mi NoteBook Pro",
+        "lapprice":"₹53,999",
+        "lapimage":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1648710116.97884839!380x380.jpg?f=webp",
+        "lapdetail":"2.5K QHD Mi TrueLife Display"
+       },
+       {
+        "tabname":"Xiaomi Pad 5",
+        "tabprice":"₹26,499",
+        "tabimage":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650896467.04424744.jpg?width=400&height=400",
+        "tabdetail":"2.5K Resolution |120Hz Refresh Rate"
+       },
+       {
+        "tabname":"Redmi Pad",
+        "tabprice":"₹14,999",
+        "tabimage":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1664774558.19975910.jpg?width=400&height=400",
+        "tabdetail":"2K Resolution | 8000mAh Battery"
+       }  
+]

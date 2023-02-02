@@ -1,0 +1,106 @@
+.navbar-brand {
+    color: black;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.navbar-brand span{
+    color:darkorange
+}
+.nav-link{
+    margin-left: 30px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+
+}
+.d-flex{
+    margin-right: 150px;
+}
+.btn2 {
+    margin-left: 17%;
+    position: absolute;
+    top: 58%;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: 3px solid orange;
+    font-size: 19px;
+}
+.btn2:hover{
+    color: orange;
+}
+.h12{
+    margin-left:12%;
+    position: absolute;
+    top: 10%;
+}
+.p2{
+    margin-left:11%;
+    position: absolute;
+    top: 25%;
+    font-size: 30px;
+}
+.h11{
+    margin-left:18%;
+    position: absolute;
+    top: 20%;
+}
+.p1{
+    margin-left: 19%;
+    position: absolute;
+    top: 40%;
+    color: rgb(13, 12, 12);
+    font-size: 28px;
+}
+.btn1 {
+    margin-left: 18%;
+    position: absolute;
+    top: 68%;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: 3px solid orange;
+    font-size: 19px;
+}
+.btn1:hover{
+    color: orange;
+}
+.p3{
+    margin-left: 19%;
+    position: absolute;
+    top: 40%;
+    color: rgb(248, 244, 244);
+    font-size: 28px;
+}
+.btn3 {
+    margin-left: 18%;
+    position: absolute;
+    top: 68%;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: 3px solid orange;
+    font-size: 19px;
+}
+.btn3:hover{
+    color: orange;
+}
+.lap{
+    text-align: left;
+}
+.fw-bolder{
+    color: orange;
+}
+nav ul li a{
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:orange;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+     width: 100%;
+}

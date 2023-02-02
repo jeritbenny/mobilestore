@@ -1,0 +1,44 @@
+.h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.div1{
+    height:450px;
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 5px rgb(218, 209, 209);
+
+}
+.div1:hover{
+    box-shadow: 10px 10px 5px rgb(240, 234, 234); 
+}
+ input{
+    padding-top: 10px;
+    margin-top: 15px;
+    padding-left: 80px;
+    margin-left: 15px;
+
+}
+.div2{
+    margin-top: 30px;
+
+}
+button{
+    margin-left: 5px;
+    padding: 0px 40px;
+    font-weight: 500;
+}
+button:hover{
+    background-color: orange;
+}
+.dd{
+    background-color:orange;
+    height: 100vh;
+}

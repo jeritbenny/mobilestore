@@ -1,0 +1,50 @@
+<div class="div2">
+<h1 class="h11"> Login into your Account</h1>
+
+<div class="clas" id="container-login">
+    <div id="title">
+        <i class="material-icons lock">lock</i> Login
+    </div>
+
+    <form (ngSubmit)="login()" [formGroup]="loginForm" >
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">face</i>
+            </div>
+            <input formControlName="uname" placeholder="Username" type="text"      name="uname" required class="validate" autocomplete="off">
+        </div>
+        <div   *ngIf="this.loginForm.get('uname')?.errors && this.loginForm.get('uname')?.touched"><p>invalid username</p></div>
+
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">vpn_key</i>
+            </div>
+            <input  formControlName="psw" placeholder="Password" type="password"                             name="pswd" required class="validate" autocomplete="off">
+        </div>
+        <div *ngIf="this.loginForm.get('psw')?.errors && this.loginForm.get('psw')?.touched"><p>invalid password</p></div>
+
+
+        <div class="remember-me">
+            <input type="checkbox">
+            <span style="color: #757575">Remember Me</span>
+        </div>
+
+        <input type="submit" value="Log In"   />
+    </form>
+
+    <div class="forgot-password">
+        <a href="#">Forgot your password?</a>
+    </div>
+    <div class="privacy">
+        <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="register">
+        <span style="color: #657575">Don't have an account yet?</span>
+        <button id="register-link" routerLink="register">Register here</button>
+    </div>
+    </div>
+</div>

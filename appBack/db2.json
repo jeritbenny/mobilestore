@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Mi TV 5X 43",
+        "price":"₹31,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1629897150.48646618!256x256.jpg?f=webp",
+         "details":""
+    },
+    {
+        "name":"Xiaomi Smart TV 5A 80 cm",
+        "price":"₹13,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650993021.84395849!380x380.jpg?f=webp",
+         "details":"Additional ₹1,000 Prepaid Discount"
+    },
+    {
+        "name":"Mi TV 4A 80cm",
+        "price":"₹16,499",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1642760693.87654223!380x380.png?f=webp",
+         "details":"Additional ₹1,000 Prepaid Discount"
+    },
+    {
+        "name":"Xiaomi Smart TV 5A 80 cm",
+        "price":"₹13,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650993021.84395849!380x380.jpg?f=webp",
+         "details":"Extra ₹1,500 Coupon offer"
+    },
+    {
+        "name":"Xiaomi Smart TV X43",
+        "price":"₹28,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1663152565.22081554!380x380.jpg?f=webp",
+         "details":"Discount up to Rs 6,000 on accessories"
+    },
+    {
+        "name":"Xiaomi OLED Vision TV 55",
+        "price":"₹99,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650976094.42847806!380x380.jpg?f=webp",
+         "details":"4K OLED | IMAX Enhanced"
+    },
+    {
+        "name":"Xiaomi Smart TV X50",
+        "price":"₹38,999",
+        "image":"https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1663152515.13515115!380x380.jpg?f=webp",
+         "details":"4K Dolby Vision | 30W Dolby Audio"
+    }
+]

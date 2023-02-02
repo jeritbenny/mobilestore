@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-md">
+      <a class="navbar-brand">Cart...</a>
+    </div>
+  </nav>
+<!-- empty cart -->
+<div class="container border border-info ml-5  p-5" *ngIf="cartitems.length==0">
+    <div class="row text-center">
+        <div class="col">
+            <img  src="https://i.poweredtemplates.com/i/cl/00/621/ppt_animation_332.gif" width="500px" alt="">
+            <h3 class="mt-4">Your Cart is empty</h3>
+             <button routerLink="laptop">Shop now</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- cart with content -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table border border-dark m-5">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let products of cartitems let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{products.lapname}}</td>
+                        <td>{{products.lapprice}}</td>
+                        <td><img [src]="products.lapimage" alt=""width="100"></td>
+                        <td><i (click)="removeitem(products)" class="fa fa-trash text-danger mt-3"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="float:right;">
+                <button class="btn btn-info">Empty Cart</button>&nbsp;
+                <button class="btn btn-success"(click)="buy()">Buy now</button>&nbsp;
+                <b>Total:{{grand}}</b>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="dd">
+<div>
+    <h1 class="h1">Place your Order</h1>
+</div>
+<div class="div1">
+    <form  [formGroup]="orderForm">
+        <input type="text" placeholder="Enter your Name" formControlName="name"><br>
+        <div   *ngIf="this.orderForm.get('name')?.errors && this.orderForm.get('name')?.touched"><p>invalid username</p></div>
+
+        <input type="number" placeholder="Mob:no" formControlName="mobile"><br>
+        <div   *ngIf="this.orderForm.get('mobile')?.errors && this.orderForm.get('mobile')?.touched"><p>invalid mobile Number</p></div>
+
+        <input type="text-area" placeholder="Address" formControlName="address"><br>
+        <div   *ngIf="this.orderForm.get('address')?.errors && this.orderForm.get('address')?.touched"><p>invalid Address</p></div>
+
+        <input type="number" placeholder="Pincode" formControlName="pincode"><br>
+        <div   *ngIf="this.orderForm.get('pincode')?.errors && this.orderForm.get('pincode')?.touched"><p>invalid Pincode</p></div>
+
+        <input type="text" placeholder="State" formControlName="state"><br>
+        <div   *ngIf="this.orderForm.get('state')?.errors && this.orderForm.get('state')?.touched"><p>invalid State</p></div>
+
+        <input type="text" placeholder="Town" formControlName="town">
+        <div   *ngIf="this.orderForm.get('town')?.errors && this.orderForm.get('town')?.touched"><p>invalid Town</p></div>
+
+    </form>
+    <div class="div2">
+    <button (click)="order()">order</button>
+    <button>Cancel</button>
+    </div>
+</div>
+</div>

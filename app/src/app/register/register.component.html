@@ -1,0 +1,59 @@
+<div class="div2">
+    <h1 class="h11">Create  Account</h1>
+<div id="container-register">
+    <div id="title">
+        <i class="material-icons lock">lock</i> Register
+    </div>
+
+    <form (ngSubmit)="register()"[formGroup]="registerForm">
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">email</i>
+            </div>
+            <input id="email"  formControlName="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+        </div>
+        <div *ngIf="this.registerForm.get('email')?.errors && this.registerForm.get('email')?.touched"><p>invalid email</p></div>
+
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">face</i>
+            </div>
+            <input id="username"  formControlName="uname" placeholder="Username" type="text" required class="validate" autocomplete="off">
+
+        </div>
+        <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched"><p>invalid username</p></div>
+
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">vpn_key</i>
+            </div>
+            <input id="password" formControlName="psw" placeholder="Password" type="password" required class="validate" autocomplete="off">
+
+        </div>
+        <div *ngIf="this.registerForm.get('psw')?.errors && this.registerForm.get('psw')?.touched"><p>invalid password</p></div>
+
+
+        <div class="remember-me">
+            <input type="checkbox">
+            <span style="color: #757575">I accept Terms of Service</span>
+        </div>
+
+        <input type="submit" value="Register"    />
+    </form>
+
+    <div class="privacy">
+        <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="register">
+        <span style="color: #657575">Do you already have an account?</span>
+    <button   routerLink="" id="register-link">Log In here</button>
+    </div>
+    </div>
+</div>

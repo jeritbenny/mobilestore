@@ -17,6 +17,7 @@ body {
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
     text-align: center;
+    margin-left: 55%;
 }
 
 #container-register {
@@ -195,17 +196,25 @@ input[type=submit] {
 }
 
 .h11{
-    text-align: center;
+    /* text-align: center; */
     padding-top: 30px;
+    margin-left: 700px;
     }
 
 
-.clas{
-    margin-left: 50%;
-    margin-top: 10px;
-   
-}
+
 .div2{
-    background-color: #ee790b;
+    background-color: #e8e3e3;
     height: 100vh;
+}
+.div2 img{
+    position: absolute;
+    width: 600px;
+    height: 100vh;
+
+}
+.h11 .img1{
+    width: 80px;
+    height: 70px;
+    margin-left: -80px;
 }

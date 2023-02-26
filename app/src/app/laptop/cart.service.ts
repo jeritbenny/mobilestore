@@ -1,5 +1,5 @@
 
-  import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -27,13 +27,17 @@ export class CartService {
     })
     return grandsum;
   }
-  removecart(products:any){
+  removecart(product:any){
     this.cartarray.map((item:any,index:any)=>{
-      if(products.id==item.id){
-        // this.cartlist.splice(index,1);
+      if(product.id==item.id){
+        this.cartarray.splice(index,1)
       }
     })
     this.cartlist.next(this.cartarray)
+  }
+removeall(){
+  this.cartarray=[];
+  this.cartlist.next(this.cartarray)
   }
 }
 

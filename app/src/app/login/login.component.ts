@@ -14,13 +14,6 @@ export class LoginComponent implements OnInit {
   uname = ''
   psw = ''
 
-  // userDetails:any={
-  //   anu:{username:"anu",password:111},
-  //   anna:{username:"anna",password:222},
-  //   ammu:{username:"ammu",password:333},
-  //   kunnu:{username:"kunnu",password:444},
-  // }
-
   constructor(private router: Router, private ds:DataService, private fb: FormBuilder) {
 
   }
@@ -46,7 +39,7 @@ export class LoginComponent implements OnInit {
       if (this.loginForm.valid) {
        this.ds.login(uname,psw).subscribe((result:any)=>{
         alert(result.message)
-         this.router.navigateByUrl('dashboard')
+         this.router.navigateByUrl('')
        },
        result=>{
         alert(result.error.message)
@@ -57,6 +50,10 @@ export class LoginComponent implements OnInit {
     else{
       alert('invalid form')
     }
+  }
+  reg(){
+    this.router.navigateByUrl('register')
+
   }
 
 }

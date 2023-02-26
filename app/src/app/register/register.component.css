@@ -28,6 +28,7 @@ body {
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
     text-align: center;
+    margin-left: 55%;
 }
 
 #title {
@@ -204,6 +205,17 @@ input[type=submit] {
    
 }
 .div2{
-    background-color: #ee790b;
+    background-color: #dcdad8;
     height: 100vh;
+}
+.div2 img{
+    position: absolute;
+    width: 600px;
+    height: 100vh;
+
+}
+.h11 .img1{
+    width: 80px;
+    height: 70px;
+    margin-left: -80px;
 }

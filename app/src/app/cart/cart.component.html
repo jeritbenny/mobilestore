@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container-md">
       <a class="navbar-brand">Cart...</a>
+      <i class="fa-solid fa-circle-left p-3"style=" align-items:center; width: 50px;height: 50px;border-radius: 10px; position: absolute;margin-left: 900px; background-color: aliceblue;" (click)="back()"></i>
     </div>
   </nav>
 <!-- empty cart -->
@@ -42,7 +43,7 @@
                 </tbody>
             </table>
             <div style="float:right;">
-                <button class="btn btn-info">Empty Cart</button>&nbsp;
+                <button class="btn btn-info" (click)="removeall()">Empty Cart</button>&nbsp;
                 <button class="btn btn-success"(click)="buy()">Buy now</button>&nbsp;
                 <b>Total:{{grand}}</b>
             </div>

@@ -31,5 +31,11 @@ import { CartService } from '../laptop/cart.service';
   buy(){
     this.router.navigateByUrl('xiaomipro')
   }
+  back(){
+    this.router.navigateByUrl('laptop') 
+  }
+  removeall(){
+    this.cart.removeall()
+  }
   }
 

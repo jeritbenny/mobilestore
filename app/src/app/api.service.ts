@@ -19,8 +19,5 @@ export class ApiService {
   getTvs(){
     return this.http.get('http://localhost:3000/tv')
   }
-  // order(){
-  //   return this.http.post('http://localhost:3000/order')
-
-  // }
+  
 }

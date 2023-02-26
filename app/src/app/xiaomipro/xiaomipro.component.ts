@@ -26,32 +26,51 @@ export class XiaomiproComponent implements OnInit {
   }
 
   order(){
-  
     var name=this.orderForm.value.name
-    var mobile=this.orderForm.value.mobile
-    var address=this.orderForm.value.address
-    var pincode=this.orderForm.value.pincode
-    var state=this.orderForm.value.state
-    var town=this.orderForm.value.town
-    if(this.orderForm.valid){
-      this.ds.order(mobile,name,address,pincode,state,town).subscribe((result:any)=>{
-        alert("order successfull")
-        // this.router.navigateByUrl('')
-      }
-      ,
-      result=>{
-        alert(result.error.message)
-        // this.router.navigateByUrl('')
+      var mobile=this.orderForm.value.mobile
+      var address=this.orderForm.value.address
+      var pincode=this.orderForm.value.pincode
+      var state=this.orderForm.value.state
+      var town=this.orderForm.value.town
+      if(this.orderForm.valid){
   
-      } 
-      )
+ alert("order successfull")
+      }
+      else{
+        alert("invalid form")
+      }
+
+     
+
+  //   var name=this.orderForm.value.name
+  //   var mobile=this.orderForm.value.mobile
+  //   var address=this.orderForm.value.address
+  //   var pincode=this.orderForm.value.pincode
+  //   var state=this.orderForm.value.state
+  //   var town=this.orderForm.value.town
+  //   if(this.orderForm.valid){
+  //     this.ds.order(mobile,name,address,pincode,state,town).subscribe((result:any)=>{
+  //       alert("order successfull")
+  //       // this.router.navigateByUrl('')
+  //     }
+  //     ,
+  //     result=>{
+  //       alert(result.error.message)
+  //       // this.router.navigateByUrl('')
+  
+  //     } 
+  //     )
      
   
-    }
-  else{
-    alert('invalid form')
-    }
-  
-   }
+  //   }
+  // else{
+  //   alert('invalid form')
+  //   }
+    }
+   cancel(){
+    this.router.navigateByUrl('')
+    }
  
+   
 }
+

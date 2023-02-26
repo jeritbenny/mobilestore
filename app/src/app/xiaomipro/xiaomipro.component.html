@@ -3,9 +3,13 @@
 <div>
     <h1 class="h1">Place your Order</h1>
 </div>
+<div class="dd1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXgmJiiPpWsM5T_bivZ5gWc1kOKmBgwe_Fg&usqp=CAU" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGXfgWtYJXJed0v45Ke31QMdhPHxaqxiwkg&usqp=CAU" alt="">
+</div>
 <div class="div1">
     <form  [formGroup]="orderForm">
-        <input type="text" placeholder="Enter your Name" formControlName="name"><br>
+        <input type="text" placeholder="Enter your Name" formControlName="name" name="nam"><br>
         <div   *ngIf="this.orderForm.get('name')?.errors && this.orderForm.get('name')?.touched"><p>invalid username</p></div>
 
         <input type="number" placeholder="Mob:no" formControlName="mobile"><br>
@@ -26,7 +30,7 @@
     </form>
     <div class="div2">
     <button (click)="order()">order</button>
-    <button>Cancel</button>
+    <button (click)="cancel()">Cancel</button>
     </div>
 </div>
 </div>

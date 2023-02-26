@@ -42,11 +42,11 @@ register(){
   if(this.registerForm.valid){
     this.ds.register(email,uname,psw).subscribe((result:any)=>{
       alert(result.message)
-      this.router.navigateByUrl('')
+      this.router.navigateByUrl('/login')
     },
     result=>{
       alert(result.error.message)
-      this.router.navigateByUrl('')
+      // this.router.navigateByUrl('')
 
     })
    
@@ -57,5 +57,7 @@ else{
   }
 
  }
-
+log(){
+  this.router.navigateByUrl('login')
+}
 }
